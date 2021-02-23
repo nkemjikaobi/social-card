@@ -3,7 +3,7 @@ import CardItem from './CardItem';
 
 const Cards = () => {
 
-    const [cards, setCards]= useState([
+    const [cards]= useState([
             {
                 id: 1,
                 title: 'dev',
