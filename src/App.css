@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.card{
+  box-sizing: border-box;
+  border: 1px solid rgb(167, 164, 164);
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#card-bg{
+  background: rgb(243, 160, 7);
+  padding: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  background: rgb(31, 30, 30);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  margin: 5px auto auto 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-main{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 45px;
+  padding: 15px;
   color: white;
+  margin: -25px auto 0 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.card-right{
+  background: white;
+  color: rgb(243, 160, 7);
+  border: 1px solid black;
+  width: 150px;
+  padding: 5px;
+  margin: -20px 10px 10px 310px;
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-right span {
+  width: 70%;
+  margin: auto 0;
+  font-weight: bold;
+}
+img{
+  width: 30%;
+}
+.card-footer{
+  padding: 10px;
+  font-size: 16px;
+}
+.card-footer p {
+  margin-top: -10px;
+}
+.card-footer a {
+  text-decoration: none;
+  color: rgb(121, 117, 117);
+}
+.card-icons {
+  box-sizing: border-box;
+  width: 500px;
+  margin: 10px auto;
+}
+#retweet{
+  color: green;
+}
+#like{
+  color: red;
+  ackground-color: red;
+}
+.card-icons span {
+  margin-right: 30px;
+}
+#border {
+  border-bottom: 1px solid rgb(167, 164, 164);
+  width: 50%;
+  margin: 0 auto 0 250px;
 }
