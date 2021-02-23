@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import CardFooter from './CardFooter'
 import CardIcons from './CardIcons'
 import Border from './Border'
-import woman from '../images/woman.jpg'
-import man from '../images/man.jpg'
-import child from '../images/child.jpg'
+// import woman from '../images/woman.jpg'
+// import man from '../images/man.jpg'
+// import child from '../images/child.jpg'
 
 const CardItem = ({ card }) => {
 
