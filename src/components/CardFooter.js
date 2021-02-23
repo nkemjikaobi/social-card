@@ -1,13 +1,19 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const CardFooter = () => {
+const CardFooter = ({ footer: {footerTitle, footerDescription, footerLink }}) => {
     return (
-        <div class='card-footer'>
-            <h4>Learning React? Start Small.</h4>
-            <p>Can't pry yourself away from the tutorials? The cure is to make tiny little experiment apps.</p>
-            <a href="#!">dev.to</a>
+        <div className='card-footer'>
+            <h4>{footerTitle}</h4>
+            <p>{footerDescription}</p>
+            <a href="#!">{footerLink}</a>
         </div>
     )
 }
+
+CardFooter.propTypes = {
+    footer: PropTypes.object.isRequired,
+}
+
 
 export default CardFooter

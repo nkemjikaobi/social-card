@@ -1,53 +1,65 @@
-.card{
+* {
   box-sizing: border-box;
-  border: 1px solid rgb(167, 164, 164);
-  width: 500px;
-  margin: 20px auto;
-  border-radius: 5px;
 }
-#card-bg{
+.cardd {
+  border-radius: 10px;
+  width: 100%;
+  margin: 30px 0px !important;
+}
+#card-bg {
   background: rgb(243, 160, 7);
-  padding: 5px;
 }
-button{
+button {
   background: rgb(31, 30, 30);
+  position: relative;
   padding: 10px;
   border-radius: 5px;
   color: white;
   text-transform: uppercase;
-  margin: 5px auto auto 5px;
+  left: 10px;
+  top: 5px;
 }
-.card-main{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 45px;
-  padding: 15px;
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.card-main {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4vh;
+  padding: 10px;
   color: white;
-  margin: -25px auto 0 5px;
+  margin: 10px auto 0 5px;
 }
-.card-right{
+.card-right {
+  display: flex;
+  position: relative;
   background: white;
   color: rgb(243, 160, 7);
   border: 1px solid black;
-  width: 150px;
-  padding: 5px;
-  margin: -20px 10px 10px 310px;
-  display: flex;
+  width: 40%;
+  padding: 2.5px;
+  right: -200px;
+  top: -10px;
 }
 .card-right span {
-  width: 70%;
+  width: 50%;
   margin: auto 0;
   font-weight: bold;
 }
-img{
+img {
   width: 30%;
 }
-.card-footer{
+.card-footer {
   padding: 10px;
-  font-size: 16px;
+  font-size: 2vh;
 }
 .card-footer p {
   margin-top: -10px;
@@ -57,22 +69,26 @@ img{
   color: rgb(121, 117, 117);
 }
 .card-icons {
-  box-sizing: border-box;
-  width: 500px;
-  margin: 10px auto;
+  width: 30% !important;
+  margin: 20px 0px !important;
 }
-#retweet{
+#retweet {
   color: green;
 }
-#like{
+#like {
   color: red;
-  ackground-color: red;
 }
-.card-icons span {
-  margin-right: 30px;
+.card-icons {
+  display: flex;
+}
+i {
+  margin-right: 5px;
 }
 #border {
   border-bottom: 1px solid rgb(167, 164, 164);
-  width: 50%;
-  margin: 0 auto 0 250px;
+  width: 90%;
+  margin: 0 auto 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
 }

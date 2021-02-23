@@ -1,14 +1,26 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const CardIcons = () => {
+
+const CardIcons = ({icons: { retweets, likes, comments, messages}}) => {
     return (
-        <div class='card-icons'>
-            <span id='comment'><i class="far fa-comment"></i>    2</span> 
-            <span id='retweet'><i class="fas fa-retweet"></i>    47</span> 
-            <span id='like'><i class="far fa-heart"></i>    190</span> 
-            <span id='message'><i class="far fa-envelope"></i></span>
+        <div className='card-icons'>
+            <span id='comment' style={show}><i className="far fa-comment"></i>{comments}</span> 
+            <span id='retweet' style={show}><i className="fas fa-retweet"></i>    {retweets}</span> 
+            <span id='like' style={show}><i className="far fa-heart"></i>    {likes}</span> 
+            <span id='message' style={show}><i className="far fa-envelope"></i>    {messages}</span>
         </div>
     )
+}
+
+CardIcons.propTypes = {
+    icons: PropTypes.object.isRequired,
+}
+
+const show = {
+    display: 'flex',
+    marginRight: '20px',
+    alignItems: 'baseline'
 }
 
 export default CardIcons
