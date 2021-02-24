@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import CardFooter from './CardFooter'
 import CardIcons from './CardIcons'
 import Border from './Border'
-// import woman from '../images/woman.jpg'
+ import woman from '../images/woman.jpg'
 // import man from '../images/man.jpg'
-// import child from '../images/child.jpg'
+//  import child from '../images/child.jpg'
 
 const CardItem = ({ card }) => {
 
@@ -18,7 +18,7 @@ const CardItem = ({ card }) => {
                 </div>
                 <div className='card-right'>
                     <span>{card.author}</span>
-                    <img src='' alt='human' width='30%' height='30%'/>
+                    <img src={woman} alt='human' width='30%' height='30%'/>
                 </div>
             </div>
             <CardFooter footer={card} key={card.id} />
