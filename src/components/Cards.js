@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import CardItem from './CardItem';
+import woman from '../images/woman.jpg'
+import man from '../images/man.jpg'
+import child from '../images/child.jpg'
 
 const Cards = () => {
 
@@ -9,7 +12,7 @@ const Cards = () => {
                 title: 'dev',
                 description: 'Learning React? Start Small.',
                 author: 'Dave Ceddia',
-                url: 'man',
+                url: man,
                 footerTitle: 'Learning React? Start Small',
                 footerDescription: 'Can\'t pry yourself away from the tutorials? The cure is to make tiny little experiment apps.',
                 footerLink: 'dave.com',
@@ -23,7 +26,7 @@ const Cards = () => {
                 title: 'baker',
                 description: 'The dough and flour matters.',
                 author: 'Lucia Baker',
-                url: 'woman',
+                url: woman,
                 footerTitle: 'The dough rises',
                 footerDescription: 'More flour needed',
                 footerLink: 'baker.io',
@@ -37,7 +40,7 @@ const Cards = () => {
                 title: 'student',
                 description: 'Education keeps me going',
                 author: 'Jasper Lopez',
-                url: 'child',
+                url: child,
                 footerTitle: 'Atomic Physics',
                 footerDescription: 'Quantum Mechanics might take over',
                 footerLink: 'jasper.lopez.dev',
